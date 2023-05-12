@@ -111,8 +111,12 @@
 
 @media screen and (max-width:353px) {
     
+    .expenses-container{
+        width: 100%;
+        height: 100%;
+    }
     .expenses-container .expenses-content{
-        max-width: 10rem;
+        max-width: 8rem;
          
     }
 }
