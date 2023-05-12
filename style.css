@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.expenses-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(27, 66%, 92%)
+}
+
+.expenses-container .expenses-content{
+    max-width: 28rem;
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    flex-direction: column;
+    
+}
+
+.expenses-content .balance-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: hsl(10, 79%, 65%);
+    padding:10px 15px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.balance-container .logo-container img{ 
+    width: 50px;
+    height: 50px;
+}
+
+.expenses-container .balance-chart{
+    width: 100%;
+    height: 20rem;
+    padding:20px;
+    border-radius: 15px;
+    background-color:  #fff;
+}
+#myChart{
+    height: 10rem;
+}
+
+
+.balance-chart .monthy-container{
+    margin: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5rem 0;
+    
+}
+
+.total-monthly h2{
+    font-size: 2rem;
+}
+
+
+
+@media screen and (max-width:606px) {
+    
+.expenses-container .expenses-content{
+    max-width: 25rem;
+}
+    
+}
+@media screen and (max-width:453px) {
+    
+.expenses-container .expenses-content{
+    max-width: 20rem;
+        
+    height: 25rem; 
+}
+
+
+}
+
+@media screen and (max-width:353px) {
+    
+    .expenses-container .expenses-content{
+        max-width: 13rem;
+        height: 30rem; 
+    }
+    #mychart{
+        padding:5rem
+    }
+    .total-monthly p,.last-month p,.last-month span{
+        font-size: 10px;
+    }
+    .total-monthly h2{
+        font-size: 20px;
+    }
+    
+    .balance-chart .monthy-container{
+        width: 100%;
+        margin:0;
+        padding:1rem 0.5rem;
+    }
+}
+
+
+
+@media screen and (max-width:353px) {
+    
+    .expenses-container .expenses-content{
+        max-width: 10rem;
+         
+    }
+}
